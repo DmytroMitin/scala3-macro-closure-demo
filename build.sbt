@@ -6,3 +6,7 @@ lazy val root = (project in file("."))
   .settings(
     name := "scala3-macro-closure-demo"
   )
+
+scalacOptions ++= Seq(
+  "-Yretain-trees",
+)
